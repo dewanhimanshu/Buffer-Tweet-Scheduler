@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'passwords/edit'
   get 'sessions/new'
   #get 'main/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -11,4 +12,7 @@ Rails.application.routes.draw do
    post "sign_in", to: "sessions#create"
    delete "logout", to: "sessions#destroy"
   
+
+   get "edit_password", to: "passwords#edit"
+   patch "edit_password", to: "passwords#update"
 end
