@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'omniauth_callbacks/twitter'
   get 'passwords/edit'
   get 'sessions/new'
   #get 'main/index'
@@ -22,6 +23,9 @@ Rails.application.routes.draw do
    get "password/reset/edit", to: "password_resets#edit"
    patch "password/reset/edit", to: "password_resets#update"
 
+   get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
+
+   resources :twitter_accounts
    
 
 end
