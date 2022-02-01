@@ -24,6 +24,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem "omniauth-twitter", "~> 1.4"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
+gem "twitter", "~> 7.0"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
