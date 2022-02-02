@@ -130,4 +130,6 @@ config.action_mailer.smtp_settings = {
     user_name:  Rails.application.credentials.dig(:send_blue , :username),
     password: Rails.application.credentials.dig(:send_blue , :password)
 }
+  config.logger = Logger.new(STDOUT)
+  config.log_level = :debug
 end
