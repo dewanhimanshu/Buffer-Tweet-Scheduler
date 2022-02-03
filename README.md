@@ -16,7 +16,7 @@
   * Edit Password
   * Reset Password Using Action Mailer and Unique Token
 * OmniAuth-Twitter to Connect Different Twiiter Accounts
-* Schedule Tweets using ActiveJob and Twiiter API
+* Schedule Tweets using ActiveJob and Twitter API
 * Using SendingBlue Service for Sending Mails 
 * Deployed on Heroku 
 
